@@ -10,8 +10,9 @@ from django import forms
 from coleyoungmark.settings import MEDIA_ROOT, BASE_DIR
 from django.core.context_processors import csrf
 
+
 def landingpage(request):
-    t = get_template('twenty/index.html')
+    t = get_template('twenty1/index.html')
     c = RequestContext(request)
     html = t.render()
     return HttpResponse(html)
